@@ -1,0 +1,59 @@
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+      top: 70%;
+    }
+    100% {
+      opacity: 1;
+      top: 50%;
+    }
+}
+
+body {
+    background: black;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    font-size: 48px;
+    line-height: 0;
+    user-select: none; 
+}
+
+#python {
+    font-size: 16px;
+    line-height: 15px;
+    user-select: none; 
+}
+
+img {
+    height: 40px;
+    width: 40px;
+}
+
+#rd {
+    font-size: 24px;
+    user-select: none; 
+}
+
+#time {
+    font-size: 18px; 
+    user-select: none; 
+}
+
+.wrapper {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+
+    animation-direction: normal;
+    animation-delay: 1s;
+    animation-name: fadeIn;
+    animation-duration: 1000ms;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
